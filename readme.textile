@@ -8,7 +8,7 @@ This is a simple bash script to aid users with the git and GitHub setup process.
 * Upload your public ssh key to your GitHub account
 * Ensure ssh-agent loads for msysgit users
 
-This script has been tested on OSX Snow Leopard and Msysgit.  You must have git installed before you run this script.
+This script has been tested on OS X Snow Leopard, Msysgit and Ubuntu 8.04.  You must have git installed before you run this script.  On Linux, you must ensure that curl is installed; for example, if you are using Ubuntu/Debian, by running @sudo apt-get install curl@.
 
 h2. Downloading and running the script
 
