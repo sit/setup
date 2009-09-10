@@ -26,8 +26,8 @@ if [ -z "$token" ]; then
 
 	if [ $token ]; then
 		echo "Saving GitHub token to global git config"
-		`git config --global github.user $user`
-		`git config --global github.token $token`
+		git config --global github.user $user
+		git config --global github.token $token
 	else
 		echo "Error retrieving token"
 		exit 1
@@ -50,7 +50,7 @@ read -p "Enter git committer name (return to use '$gitname'): " -e newgitname
 if [ -z "$newgitname" ]; then
 	newgitname=$gitname
 fi
-`git config --global user.name "$newgitname"`
+git config --global user.name "$newgitname"
 
 
 # Setup email
@@ -64,7 +64,7 @@ read -p "Enter git committer email (return to use '$gitemail'): " -e newgitemail
 if [ -z "$newgitemail" ]; then
 	newgitemail=$gitemail
 fi
-`git config --global user.email "$newgitemail"`
+git config --global user.email "$newgitemail"
 
 
 # SSH keys!
